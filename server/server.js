@@ -12,11 +12,11 @@ app.use( require('./routes/user'))
 // mongo
 
 mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true }, (err, res) => {
+    // mongoose.connect('mongodb://admin:yf0scaro@ds135724.mlab.com:35724/rest', { useNewUrlParser: true }, (err, res) => {
     if (err)
         throw new Error('It was found a error')
     
     console.log('Mongo Online')
-    
 })
 
 
